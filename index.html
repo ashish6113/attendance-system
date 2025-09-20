@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="camera-section">
+            <video id="camera-feed" autoplay></video>
+            <canvas id="photo-canvas" style="display:none;"></canvas>
+        </div>
+        <div class="controls-section">
+            <div class="button-group">
+                <button id="start-camera-btn">Start Camera</button>
+                <button id="take-photo-btn" disabled>Take Photo</button>
+                <button id="add-to-server-btn" disabled>Add to Server</button>
+            </div>
+            <div class="attendance-group">
+                <button id="start-attendance-btn" disabled>Start Attendance</button>
+                <button id="stop-attendance-btn" disabled>Stop Attendance</button>
+            </div>
+            <div class="download-group">
+                <button id="download-attendance-btn" disabled>Download Attendance</button>
+            </div>
+            <div class="status-box">
+                <p id="status-message">Status: Camera is off.</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
